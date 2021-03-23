@@ -1,0 +1,10 @@
+apiVersion: image.openshift.io/v1
+kind: ImageStream
+metadata:
+  labels:
+    build: nginx-build
+  name: nginx-build
+  namespace: test
+spec:
+  lookupPolicy:
+    local: false
